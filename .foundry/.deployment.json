@@ -1,0 +1,12 @@
+{
+  "projectId": "b5696209-abcf-45b5-a31f-31d3c6b3e819",
+  "hostedAgentDeployOptions": {
+    "deploymentMethod": "zip",
+    "zipPackageMode": "remote",
+    "zipRuntime": "dotnet_10",
+    "zipEntryPoint": [
+      "dotnet",
+      "echo9-agent.dll"
+    ]
+  }
+}

@@ -16,7 +16,7 @@ services:
         sku:
           name: GlobalStandard
           capacity: 10
-  echo9-agent:
+  echo9:
     host: azure.ai.agent
     metadata:
       tags:

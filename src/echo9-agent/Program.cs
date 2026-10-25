@@ -8,7 +8,14 @@ using Microsoft.Agents.AI.Foundry.Hosting;
 // Load environment variables from a .env file if present (for local development).
 Env.NoClobber().TraversePath().Load();
 
-if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("APPLICATIONINSIGHTS_CONNECTION_STRING")))
+var configuration = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .AddEnvironmentVariables()
+    .Build();
+
+var appInsightsConnectionString = configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"];
+
+if (string.IsNullOrEmpty(appInsightsConnectionString))
 {
     Console.Error.WriteLine(
         "[WARNING] APPLICATIONINSIGHTS_CONNECTION_STRING not set — traces will not be sent " +

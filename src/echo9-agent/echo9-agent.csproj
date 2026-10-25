@@ -5,6 +5,7 @@
     <RootNamespace>Echo</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>a1ae9ba1-de54-484d-9d4d-a50ac8e0ef7c</UserSecretsId>
     <!-- NU1903: suppress package vulnerability audit warnings for preview/alpha packages from the azure-sdk-for-net feed.
          NU1605: suppress downgrade warnings that arise from preview transitive dependency resolution. -->
     <NoWarn>$(NoWarn);NU1903;NU1605</NoWarn>

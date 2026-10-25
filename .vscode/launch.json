@@ -1,14 +1,7 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug Local Agent HTTP Server",
-            "type": "coreclr",
-            "request": "attach",
-            "processName": "echo9-agent",
-            "preLaunchTask": "Open Agent Inspector",
-            "internalConsoleOptions": "neverOpen",
-            "postDebugTask": "Terminate All Tasks"
-        }
-    ]
+    "configurations": []
 }
